@@ -1,6 +1,4 @@
 <div>
-  <p>test block</p>
-  <br/>
-  <h2>{{sectionTitle}}</h2>
-  <p>{{sectionContent}}</p>
+  <h2>{{!isTranslated ? sectionTitle : sectionTitleEN}}</h2>
+  <p>{{!isTranslated ? sectionContent : sectionContentEN}}</p>
 </div>

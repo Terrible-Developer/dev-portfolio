@@ -7,13 +7,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InfoblockComponent implements OnInit {
 
-  //constructor() { }
   @Input('sectionTitle')
   sectionTitle = '';
+  @Input('sectionTitleEN')
+  sectionTitleEN = '';
   @Input('sectionContent')
   sectionContent = '';
+  @Input('sectionContentEN')
+  sectionContentEN = '';
+  @Input('isTranslated')
+  isTranslated = false;
 
   ngOnInit(): void {
+    console.log(this.isTranslated);
   }
 
 }
