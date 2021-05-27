@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-topbar',
@@ -14,6 +14,8 @@ export class TopbarComponent implements OnInit {
 
   languageToggleButton: false;
 
+  @Input('isTranslated')
+  isTranslated = false;
   @Output()
   languageToggle: EventEmitter<boolean> = new EventEmitter<boolean>();
 
