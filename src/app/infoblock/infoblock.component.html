@@ -1,4 +1,13 @@
 <div>
-  <h2>{{!isTranslated ? sectionTitle : sectionTitleEN}}</h2>
-  <p>{{!isTranslated ? sectionContent : sectionContentEN}}</p>
+  <div *ngIf="!isTranslated then ptBR else enUS"></div>
+  <ng-template #ptBR>
+    <h2>{{sectionTitle}}</h2>
+    <p>{{sectionContent}}</p>
+  </ng-template>
+  <ng-template #enUS>
+    <h2>{{sectionTitleEN}}</h2>
+    <p >{{sectionContentEN}}</p>
+  </ng-template>
+  <br/>
+  {{isTranslated}}
 </div>

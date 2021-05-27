@@ -12,8 +12,13 @@ export class TopbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  languageToggleButton: false;
+
+  @Output()
+  languageToggle: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   changeLanguageOnClick(): void {
-    console.log('nyes');
+    this.languageToggle.emit(!this.languageToggleButton);
   }
 
 }

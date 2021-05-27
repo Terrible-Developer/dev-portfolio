@@ -19,7 +19,7 @@ export class InfoblockComponent implements OnInit {
   isTranslated = false;
 
   ngOnInit(): void {
-    console.log(this.isTranslated);
+    //console.log(this.isTranslated);
   }
 
 }

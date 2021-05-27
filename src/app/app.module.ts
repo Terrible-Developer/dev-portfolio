@@ -9,7 +9,7 @@ import { TopbarComponent } from './topbar/topbar.component';
   declarations: [
     AppComponent,
     InfoblockComponent,
-    TopbarComponent
+    TopbarComponent,
   ],
   imports: [
     BrowserModule

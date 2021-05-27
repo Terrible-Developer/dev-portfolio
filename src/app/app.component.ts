@@ -13,7 +13,8 @@ export class AppComponent {
   globalTranslation = false;
 
   changeLanguage(e): void {
-    e.preventDefault();
+    //e.preventDefault();
     this.globalTranslation = !this.globalTranslation;
+    //console.log(this.globalTranslation);
   }
 }
