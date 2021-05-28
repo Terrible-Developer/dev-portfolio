@@ -1,6 +1,7 @@
 <div id="bar">
   <div class="leftItems">
-    <div *ngIf="!isTranslated then ptBRLeft else enUSLeft"></div>
+    <h3 class="testNavBar nameTag">Victor</h3>
+    <!--<div *ngIf="!isTranslated then ptBRLeft else enUSLeft"></div>
     <ng-template #ptBRLeft>
       <p class="testNavBar">texto1BR</p>
       <p class="testNavBar">texto2BR</p>
@@ -8,7 +9,7 @@
     <ng-template #enUSLeft>
       <p class="testNavBar">text1EN</p>
       <p class="testNavBar">text2EN</p>
-    </ng-template>
+    </ng-template>-->
   </div>
   <div class="rightItems">
     <div *ngIf="!isTranslated then ptBRRight else enUSRight"></div>
@@ -18,7 +19,7 @@
     <ng-template #enUSRight>
       <p class="testNavBar">text3EN</p>
     </ng-template>
-    <label id="langToggle">
+    <label id="langToggle" class="testNavBar">
       <input type="checkbox" (click)="changeLanguageOnClick()">
       <span class="slider round"></span>
     </label>

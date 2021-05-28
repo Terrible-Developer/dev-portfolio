@@ -1,11 +1,10 @@
 <div id="page" >
-  <h1>PLACEHOLDER BANNER</h1>
   <div id="bar">
     <app-topbar [isTranslated]="globalTranslation" (languageToggle)="changeLanguage($event)"></app-topbar>
   </div>
   <div id="introduction">
-
+    <app-infoblock class="intro" [isTranslated]="globalTranslation" sectionTitle="Olá" sectionTitleEN="Hello There" sectionContent="Está e a introdução" sectionContentEN="This is the introduction"></app-infoblock>
   </div>
-  <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Setor 1" sectionTitleEN="Section 1" sectionContent="Este é o setor 1." sectionContentEN="As the title implies, this is, in fact, a section."></app-infoblock>
-  <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Setor 2" sectionTitleEN="Section 2" sectionContent="E este é o setor 2" sectionContentEN="Yes, still a section. A different one, but alas, a section."></app-infoblock>
+  <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Setor 1" sectionTitleEN="Section 1" sectionContent="Este é o setor 1" sectionContentEN="This is section 1"></app-infoblock>
+  <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Setor 2" sectionTitleEN="Section 2" sectionContent="E este é o setor 2" sectionContentEN="This is section 2"></app-infoblock>
 </div>
