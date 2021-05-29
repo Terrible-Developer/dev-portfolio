@@ -5,11 +5,12 @@
   <div class="rightItems">
     <div *ngIf="!isTranslated then ptBRRight else enUSRight"></div>
     <ng-template #ptBRRight>
-      <p class="testNavBar">texto3BR</p>
+      <p class="testNavBar">texto3</p>
     </ng-template>
     <ng-template #enUSRight>
-      <p class="testNavBar">text3EN</p>
+      <p class="testNavBar">text3</p>
     </ng-template>
+    <p>{{!isTranslated ? "Linguagem:" : "Language:"}}</p>
     <label id="langToggle" class="testNavBar">
       <input type="checkbox" (click)="changeLanguageOnClick()">
       <span class="slider round"></span>
