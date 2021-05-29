@@ -1,12 +1,12 @@
 <div>
   <div *ngIf="!isTranslated then ptBR else enUS"></div>
   <ng-template #ptBR>
-    <h2>{{sectionTitle}}</h2>
-    <p>{{sectionContent}}</p>
+    <h2 class="title">{{sectionTitle}}</h2>
+    <p class="content">{{sectionContent}}</p>
   </ng-template>
   <ng-template #enUS>
-    <h2>{{sectionTitleEN}}</h2>
-    <p >{{sectionContentEN}}</p>
+    <h2 class="title">{{sectionTitleEN}}</h2>
+    <p class="content">{{sectionContentEN}}</p>
   </ng-template>
   <br/>
 </div>

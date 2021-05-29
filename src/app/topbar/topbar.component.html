@@ -1,14 +1,14 @@
 <div id="bar">
   <div class="leftItems">
-    <h3 class="testNavBar nameTag">Victor</h3>
+    <h3 class="testNavBar nameTag">Victor's Anime Madhouse</h3>
   </div>
   <div class="rightItems">
     <div *ngIf="!isTranslated then ptBRRight else enUSRight"></div>
     <ng-template #ptBRRight>
-      <p class="testNavBar">texto3</p>
+      <p class="testNavBar">PlaceholderPT</p>
     </ng-template>
     <ng-template #enUSRight>
-      <p class="testNavBar">text3</p>
+      <p class="testNavBar">PlaceHolderEN</p>
     </ng-template>
     <p>{{!isTranslated ? "Linguagem:" : "Language:"}}</p>
     <label id="langToggle" class="testNavBar">

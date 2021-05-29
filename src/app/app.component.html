@@ -2,9 +2,25 @@
   <div id="bar">
     <app-topbar [isTranslated]="globalTranslation" (languageToggle)="changeLanguage($event)"></app-topbar>
   </div>
-  <div id="introduction">
-    <app-infoblock class="intro" [isTranslated]="globalTranslation" sectionTitle="Olá" sectionTitleEN="Hello There" sectionContent="Está e a introdução" sectionContentEN="This is the introduction"></app-infoblock>
+  <div id="introduction" class="intro">
+    <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Olá" sectionTitleEN="Hello There"
+                   sectionContent="Meu nome é Victor, e eu sou um desenvolvedor LQCQP (Literalmente, qualquer coisa que pague). Bem vindo ao meu canto da internet."
+                   sectionContentEN="My name is Victor, and I'm a LATP developer (Literally anything that pays). Welcome to my corner of the internet.">
+    </app-infoblock>
   </div>
-  <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Setor 1" sectionTitleEN="Section 1" sectionContent="Este é o setor 1" sectionContentEN="This is section 1"></app-infoblock>
-  <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Setor 2" sectionTitleEN="Section 2" sectionContent="E este é o setor 2" sectionContentEN="This is section 2"></app-infoblock>
+  <div class="infoSection">
+    <app-infoblock [isTranslated]="globalTranslation" sectionTitle="O que é este lugar?" sectionTitleEN="What is this place?"
+                   sectionContent="Esta é uma página. É isto. Agora, depois das piadas muito engraçadas, criei esta página originalmente apenas para praticar desenvolvimento Angular, e acabei transormando-a em uma espécie de portfólio."
+                   sectionContentEN="This is a page. That's it, Now, jokes aside, I originally created this page just to practice Angular development, but decided to transform it in some kind of webdev portfolio."></app-infoblock>
+    <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Quem sou eu?" sectionTitleEN="Who am I"
+                   sectionContent="Infelizmente não o Batman. Tirando este detalhe, sou só um desenvolvedor, jogador e entusiasta (tanto de computadores no geral quando especificamente de FOSS, ou Free and Open Source Software)."
+                   sectionContentEN="Unfortunately, not Batman. Besides that, I'm just a developer, player, and enthusiast (be it of computers in general as of FOSS or Free and Open Source Software)"></app-infoblock>
+    <div class="overview">
+      <p>Victor Bruno Paro</p> <br/>
+      <p>29/04/1998</p> <br />
+      <p>Email: victorbparo@gmail.com</p>
+      <p>{{!globalTranslation ? "Umuarama - Paraná, Brasil" : "Umuarama - Paraná, Brazil"}}</p>
+    </div>
+  </div>
+  <footer>Criado por Victor Paro</footer>
 </div>

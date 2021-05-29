@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  overviewString: String = "Victor Bruno Paro" + "\n\n" + "29/04/1998"
 
   globalTranslation = false;
 
