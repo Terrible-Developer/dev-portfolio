@@ -15,12 +15,7 @@
     <app-infoblock [isTranslated]="globalTranslation" sectionTitle="Quem sou eu?" sectionTitleEN="Who am I"
                    sectionContent="Infelizmente não o Batman. Tirando este detalhe, sou só um desenvolvedor, jogador e entusiasta (tanto de computadores no geral quando especificamente de FOSS, ou Free and Open Source Software)."
                    sectionContentEN="Unfortunately, not Batman. Besides that, I'm just a developer, player, and enthusiast (be it of computers in general as of FOSS or Free and Open Source Software)"></app-infoblock>
-    <div class="overview">
-      <p>Victor Bruno Paro</p> <br/>
-      <p>29/04/1998</p> <br />
-      <p>Email: victorbparo@gmail.com</p>
-      <p>{{!globalTranslation ? "Umuarama - Paraná, Brasil" : "Umuarama - Paraná, Brazil"}}</p>
-    </div>
+    <app-infocard [isTranslated]="globalTranslation"></app-infocard>
   </div>
-  <footer>Criado por Victor Paro</footer>
+  <footer>{{!globalTranslation ? "Criado por Victor Paro" : "Created By Victor Paro"}}</footer>
 </div>

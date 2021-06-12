@@ -22,5 +22,4 @@ export class TopbarComponent implements OnInit {
   changeLanguageOnClick(): void {
     this.languageToggle.emit(!this.languageToggleButton);
   }
-
 }
