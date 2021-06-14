@@ -1,0 +1,16 @@
+#+TITLE: Portfolio
+#+DESCRIPTION: Meu "portfólio"
+
+* O que é?
+Como diz a descrição que supostamente está no começo do arquivo, é meu portfólio.
+A idéia era pra que seja apenas uma página (ou talvez mais, eventualmente) para servir como uma forma de introdução e ao mesmo tempo apoio à meu currículo, idealmente falando um pouco sobre mim e alguns projetos que possam ser relevantes.
+
+* Com o que é feito?
+O site está sendo feito com Angular(2). Estou (no momento que escrevi esse arquivo) estudando angular na minha pós-graduação, e resolvi que seria uma boa idéia usar para aprender melhor fora das aulas. Sendo honesto, não estou gostando muito no geral, ainda prefiro javascript puro do que typescript e, talvez por ter mais experiência prévia, prefiro muito mais vuejs. Mas não vou mudar o projeto se possível, pretendo fazer tudo com angular exatamente para aprender.
+
+* Roadmap
+Não tenho ideia. A única coisa interessante que fiz até agora foi o botão e a estrutura de mudar a linguagem do site. Tirando isso, não passa de um monte de divs html perdidas com algum texto dentro. Além de deixar um pouco mais apresentável e melhorar o design, não imagino o que colocar, no máximo uma página apontando alguns de meus projetos e falando um pouco sobre eles.
+Pensando muito longe, talvez alguma integração com alguma API para alguma funcionalidade interessante, mas parece exagero.
+
+* Licença
+Preciso colocar alguma licença que faça sentido. Acho que um projeto node vem com a licença MIT por padrão se criado por npm/yarn, mas talvez eu troque por uma apache/gpl, se é que vai fazer alguma diferença pra um repositório irrelevante como esse.
