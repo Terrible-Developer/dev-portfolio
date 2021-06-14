@@ -2,7 +2,7 @@
 #+DESCRIPTION: Meu "portfólio"
 
 * O que é?
-Como diz a descrição que supostamente está no começo do arquivo, é meu portfólio.
+Como diz a descrição que eu descobri que não aparece no começo do arquivo, este é meu portfólio.
 A idéia era pra que seja apenas uma página (ou talvez mais, eventualmente) para servir como uma forma de introdução e ao mesmo tempo apoio à meu currículo, idealmente falando um pouco sobre mim e alguns projetos que possam ser relevantes.
 
 * Com o que é feito?
