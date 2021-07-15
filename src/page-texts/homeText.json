@@ -1,0 +1,20 @@
+{
+    "introductionSection": {
+        "titlePT": "Olá",
+        "titleEN": "Hello There",
+        "contentPT": "Meu nome é Victor, e eu sou um desenvolvedor LQCQP (Literalmente, qualquer coisa que pague). Bem vindo ao meu canto da internet.",
+        "contentEN": "My name is Victor, and I'm a LATP developer (Literally anything that pays). Welcome to my corner of the internet."
+    },
+    "whatSection": {
+        "titlePT": "O que é este lugar?",
+        "titleEN": "What is this place?",
+        "contentPT": "Esta é uma página. É isto. Agora, depois das piadas muito engraçadas, criei esta página originalmente apenas para praticar desenvolvimento Angular, e acabei transormando-a em uma espécie de portfólio.",
+        "contentEN": "This is a page. That's it, Now, jokes aside, I originally created this page just to practice Angular development, but decided to transform it in some kind of webdev portfolio."
+    },
+    "whoSection": {
+        "titlePT": "Quem sou eu?",
+        "titleEN": "Who am I?",
+        "contentPT": "Infelizmente não o Batman. Tirando este detalhe, sou só um desenvolvedor, jogador e entusiasta (tanto de computadores no geral quando especificamente de FOSS, ou Free and Open Source Software).",
+        "contentEN": "Unfortunately, not Batman. Besides that, I'm just a developer, player, and enthusiast (be it of computers in general as of FOSS or Free and Open Source Software)"
+    }
+}

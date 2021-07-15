@@ -6,25 +6,42 @@
   <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default{
+    data(){
+        // eslint-disable-next-line no-unused-labels
+        globalTranslation: false
+    },
+    methods: {
+        changeLanguage(){
+            this.globalTranslation = !this.globalTranslation;
+        }
+    },
+    mounted(){
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
     }
-  }
 }
+</script>
+
+<style lang="sass">
+#app
+  font-family: Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
+
+
+#nav
+  padding: 30px
+
+  a
+    font-weight: bold
+    color: #2c3e50
+
+    &.router-link-exact-active
+      color: #42b983
+
+  
+
 </style>
