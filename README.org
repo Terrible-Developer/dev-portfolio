@@ -6,10 +6,11 @@ Como diz a descrição que eu descobri que não aparece no começo do arquivo, e
 A idéia era pra que seja apenas uma página (ou talvez mais, eventualmente) para servir como uma forma de introdução e ao mesmo tempo apoio à meu currículo, idealmente falando um pouco sobre mim e alguns projetos que possam ser relevantes.
 
 * Com o que é feito?
-O site está sendo feito com Angular(2). Estou (no momento que escrevi esse arquivo) estudando angular na minha pós-graduação, e resolvi que seria uma boa idéia usar para aprender melhor fora das aulas. Sendo honesto, não estou gostando muito no geral, ainda prefiro javascript puro do que typescript e, talvez por ter mais experiência prévia, prefiro muito mais vuejs. Mas não vou mudar o projeto se possível, pretendo fazer tudo com angular exatamente para aprender.
+O site está sendo feito com Vuejs. Como a explicação agora cortada menciona, estava usando Angular, mas após terminar a matéria da pós-graduação, decidi que não queria continuar usando Angular.
++Angular(2)+. +Estou (no momento que escrevi esse arquivo) estudando angular na minha pós-graduação, e resolvi que seria uma boa idéia usar para aprender melhor fora das aulas. Sendo honesto, não estou gostando muito no geral, ainda prefiro javascript puro do que typescript e, talvez por ter mais experiência prévia, prefiro muito mais vuejs. Mas não vou mudar o projeto se possível, pretendo fazer tudo com angular exatamente para aprender.+
 
 * Roadmap
-Não tenho ideia. A única coisa interessante que fiz até agora foi o botão e a estrutura de mudar a linguagem do site. Tirando isso, não passa de um monte de divs html perdidas com algum texto dentro. Além de deixar um pouco mais apresentável e melhorar o design, não imagino o que colocar, no máximo uma página apontando alguns de meus projetos e falando um pouco sobre eles.
+Não tenho ideia. A única coisa interessante que fiz até agora foi o botão e a estrutura de mudar a linguagem do site. Tirando isso, não passa de um monte de divs html perdidas com algum texto dentro. Além de deixar um pouco mais apresentável e melhorar o design, não imagino o que colocar, no máximo uma página apontando alguns de meus projetos e falando um pouco sobre eles. UPDATE: Agora essa página existe, apesar de ainda não ter nada sobre nenhum projeto.
 Pensando muito longe, talvez alguma integração com alguma API para alguma funcionalidade interessante, mas parece exagero.
 
 * Licença
