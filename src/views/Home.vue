@@ -1,56 +1,102 @@
 <template>
   <div id="page" >
-    <div id="bar">
-      <Topbar isTranslated="globalTranslation" v-on:languageToggle="changeLanguage($event)"></Topbar>
-    </div>
     <div id="introduction" class="intro">
-      <Infoblock id="introductionSection" isTranslated="globalTranslation" sectionTitle="Olá" sectionTitleEN="Hello There"
-                     sectionContent="Meu nome é Victor, e eu sou um desenvolvedor LQCQP (Literalmente, qualquer coisa que pague). Bem vindo ao meu canto da internet."
-                     sectionContentEN="My name is Victor, and I'm a LATP developer (Literally anything that pays). Welcome to my corner of the internet.">
+      <Infoblock id="introductionSection" :sectionTitle="introductionSectionText.sectionTitle"
+                     :sectionContent="introductionSectionText.sectionContent">
       </Infoblock>
     </div>
     <div class="infoSection">
-      <Infoblock id="whatSection" isTranslated="globalTranslation" :sectionTitle="whatSectionText.sectionTitle"
+      <Infoblock id="whatSection" :sectionTitle="whatSectionText.sectionTitle"
                  :sectionContent="whatSectionText.sectionContent"></Infoblock>
-      <Infoblock id="whoSection" isTranslated="globalTranslation" :sectionTitle="whoSectionText.sectionTitle"
+      <Infoblock id="whoSection" :sectionTitle="whoSectionText.sectionTitle"
                  :sectionContent="whoSectionText.sectionContent"></Infoblock>
-      <Inforcard isTranslated="globalTranslation"></Inforcard>
+      <Infocard :isTranslated="globalTranslation"></Infocard>
     </div>
     <footer>{{!isTranslated ? "Criado por Victor Paro" : "Created By Victor Paro"}}</footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
-import { whatSection, whoSection } from '@/page-texts/homeText.json';
+import { introductionSection, whatSection, whoSection } from '@/page-texts/homeText.json';
 import Infoblock from '@/components/Infoblock.vue';
+import Infocard from '@/components/Infocard.vue';
 
 export default{
     name: 'Home',
     props: [ "globalTranslation" ],
     components: {
-        Infoblock
+        Infoblock,
+        Infocard,
     },
     data(){
         return {
+            introductionSectionText: {
+                sectionTitle: '',
+                sectionContent: ''
+            },
             whatSectionText: {
-                sectionTitle: whatSection.titlePT,
-                sectionContent: whatSection.contentPT
+                sectionTitle: '',
+                sectionContent: ''
             },
             whoSectionText: {
-                sectionTitle: whoSection.titlePT,
-                sectionContent: whoSection.contentPT
-            }
+                sectionTitle: '',
+                sectionContent: ''
+            },
+            isTranslated: this.globalTranslation
         }
-        // eslint-disable-next-line no-unused-labels
-        //isTranslated: false
     },
     methods: {
-
+        returnTitle(section){
+            if(!this.isTranslated)
+                return section.titlePT;
+            return section.titleEN;
+        },
+        returnContent(section){
+            if(!this.isTranslated)
+                return section.contentPT;
+            return section.contentEN;
+        },
+        updateText(){
+            this.introductionSectionText.sectionTitle = this.returnTitle(introductionSection);
+            this.introductionSectionText.sectionContent = this.returnContent(introductionSection);
+            this.whatSectionText.sectionTitle = this.returnTitle(whatSection);
+            this.whatSectionText.sectionContent = this.returnContent(whatSection);
+            this.whoSectionText.sectionTitle = this.returnTitle(whoSection);
+            this.whoSectionText.sectionContent = this.returnContent(whoSection);
+        }
+    },
+    updated(){
+        this.isTranslated = this.globalTranslation;
+        this.updateText();
     },
     mounted(){
-        //this.isTranslated = this.globalTranslation;
+        this.updateText();
     }
 }
 </script>
+
+<style lang="sass">
+#page
+  //background-color: black
+  color: #bfbfbf
+  min-height: 95vh
+  text-align: center
+
+.intro
+  width: 50%
+  margin-left: 25%
+  margin-top: 2%
+  //color: #7e7d8a
+  font-size: 28px
+  justify-content: center
+  background-color: #7e7d8a
+  border: 2px
+  border-style: solid
+
+.infoSection
+  //background-color:
+  font-size: 20px
+
+footer
+  margin-top:10%
+</style>

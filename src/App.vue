@@ -1,16 +1,20 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="bar">
+    <Topbar :isTranslated="globalTranslation" v-on:change-language="changeLanguage($event)"></Topbar>
   </div>
-  <router-view/>
+  <router-view :globalTranslation="globalTranslation" v-on:change-language="changeLanguage($event)"/>
 </template>
 
 <script>
+import Topbar from './components/Topbar.vue';
 export default{
+    components: {
+        Topbar
+    },
     data(){
-        // eslint-disable-next-line no-unused-labels
-        globalTranslation: false
+        return {
+            globalTranslation: false
+        }
     },
     methods: {
         changeLanguage(){
@@ -24,6 +28,14 @@ export default{
 </script>
 
 <style lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap')
+
+$sourceSans: 'Source Sans Pro', sans-serif
+
+body
+  background-color: #2b2b2b
+  font-family: $sourceSans
+
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
@@ -31,6 +43,8 @@ export default{
   text-align: center
   color: #2c3e50
 
+#bar
+  color: #bfbfbf
 
 #nav
   padding: 30px
@@ -41,7 +55,5 @@ export default{
 
     &.router-link-exact-active
       color: #42b983
-
-  
 
 </style>
